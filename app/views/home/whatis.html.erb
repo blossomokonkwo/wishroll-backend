@@ -28,110 +28,140 @@
     
    
 
-      <header id="menuBarB" >
+<!-- navigation bar -->
+<header id="menuBarB" style="background: #ffffff" >
+    <a>
+        <h3 class="logoMenu" style="color: black;" >WishRoll</h3>
+    </a>
+     <a class="menuItem" style="color: black;"> <%= link_to "Community Guidelines", "/what-is-wishroll", :style=> 'color:#000000;' %>  
           
+    </a>
+</header>  
 
-          <h3 style="font-family: Roboto; color: black; font-weight: bold;" >
-                <a><%= link_to "WishRoll", "/home" %></a>
-            </h3>
-         
+<div class="bodyFormatter">
+    <h2><strong>Community Guidelines</strong></h2>  
+    
+    
+        <p class="termsSubtitle"><strong>Short Version</strong></p>
+    
+        <p> 
+        WishRoll is an authentic and safe place for quality Camera Roll Stuff. We need your help to foster a safe and kind community. At WishRoll, we respect everyone, so don’t spam people or post nudity. <br></p>
+        <br>
+        <br>
 
-          <a class="menuItem" style="font-family: Roboto; color: black;" > <%= link_to "About", "/what-is-wishroll" %> 
+        <p class="termsSubtitle"><strong>Long Version</strong></p>
+        <p>
+        WishRoll is a reflection of our diverse ways of self expression and communication on the internet. Here are some ways everyone can enjoy their experience here. <br> <br>
+            By using WishRoll, you agree to these guidelines and our Terms of Service. Not following these boundaries may result in deleted content, disabled accounts, or other restrictions. <br> <br>
+            Follow these guidelines for a safe and enjoyable experience on WishRoll. In all circumstances, we reserve the right to determine what content is not allowed on the app.
+            <br> <br>
+            <strong> Post photos and videos that are appropriate.</strong> <br>
+            
+            We do not allow any sexually explicit nudity on WishRoll. If you post this content, you will be banned. 
+
+            <br> <br>
+            <strong>Keep WishRoll safe. </strong> <br>
+            WishRoll is not a platform to support or praise terrorism, organized crime, or hate groups. <br> <br>
+            Do not use WishRoll for any illegal activities like posting revenge porn, offering sexual services, buying or selling firearms, alcohol, and tobacco products between private individuals, and buying or selling illegal or prescription drugs (even if legal in your region).
+
+            <br> <br>
+            <strong> Respect other members of the WishRoll community. </strong> <br>
+            
+                We remove content that contains credible threats or hate speech, content that targets private individuals to degrade or shame them, and personal information meant to blackmail or harass someone.  <br> <br>
+                We have a zero tolerance policy for bullying or harassment.  <br> <br> 
                 
-          </a>
-      </header>  
+                It&apos;s never OK to encourage violence or attack anyone based on their race, ethnicity, national origin, sex, gender, gender identity, sexual orientation, religious affiliation, disabilities, or diseases. <br> <br>
+                Glorification of self harm or injury is prohibited. 
+            
+                <br><br>
 
-    <div id="aboutHeader">
-        <div id="aboutHeaderTitle">Meet the team.</div>
+                <strong>Impersonation, Deception, and Spam </strong> <br>
+                    You may not impersonate private or public figures on WishRoll. If you do so, you will be banned.  <br><br>
+                    Any deceptive content or false news that is malicious in nature will be deleted from WishRoll. <br><br> 
+                    Spam and any other deceptive practices are banned.  <br><br>
+
+                    <strong>Help us keep the community strong: </strong> <br>
+                    Each of us is an important part of the WishRoll community. If you see something that you think may violate our guidelines, please help us by using our built-in reporting option. <br> <br>
+                    When you complete the report, try to provide as much information as possible, such as links, usernames, and descriptions of the content, so we can find and review it quickly. <br>  <br>
+
+                    We may remove entire posts if either the imagery or associated captions violate our guidelines. <br> <br>
+                    You may find content you’re not fan of, but doesn’t violate the Community Guidelines. <br>
+                    If that happens, you can unfollow or block the person who posted it. 
+                    <br> <br> <br>
+                    Thank you for helping us create one of the best online communities in the world! <br> <br>
+                    <strong>-The WishRoll Team</strong>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+    
+
+            </p>
+
+            
+
+
+    
+</div>
+
+        
+
+    
+        
+        
+
+        
+    
+        
+        
+    
+
+<footer id="flexFooter"  >
+<div class="footerCol">
+    <a>
+        <h3 style="color: black; font-weight: 600;">WishRoll</h3>
+    </a>
+    <small>© 2021 WishRoll</small>
+</div>
+
+<div class="footerCol">
+    <h3 style="color: black; font-weight: 600;" >Policy</h3>
+    
+    <div class="footerLink">
+        
+        <a><%= link_to "Privacy Policy", "/privacy" %></a> 
+       
+    </div>
+    <div class="footerLink">
+        
+        <a><%= link_to "Terms of Service", "/terms" %></a> 
     </div>
 
-    <div id="teamContainer" class="contentContainer">
-        <a href="" target="_blank">
-          <div class="flexPeopleCard">
-            <div class="flexPeopleAvatarContainer">
-                 <%= image_tag("o_great2.jpg", :class => "flexPeopleAvatar")%> 
-            </div>
-            <h2 class="flexPeopleName" style="color: black; font-family: Roboto; font-weight: 600;">Great</h2>
-            <p class="flexPeopleTitle" style="color: #646464;">iOS Developer, Backend</p>
-          </div>
-        </a>
-    
-     <a href="" target="_blank">
-          <div class="flexPeopleCard">
-            <div class="flexPeopleAvatarContainer">
-                 <%= image_tag("n_fai.jpg", :class => "flexPeopleAvatar")%>
-            </div>
-            <h2 class="flexPeopleName" style="color: black; font-family: Roboto; font-weight: 600;">Fai</h2>
-            <p class="flexPeopleTitle" style="color: #646464;">Communications, Legal & Business Development</p>
-          </div>
-        </a>
-
-        <a href="" target="_blank">
-          <div class="flexPeopleCard">
-            <div class="flexPeopleAvatarContainer">
-                 <%= image_tag("o_blossom1.jpg", :class => "flexPeopleAvatar")%> 
-            </div>
-            <h2 class="flexPeopleName" style="color: black; font-family: Roboto; font-weight: 600;">Blossom</h2>
-            <p class="flexPeopleTitle" style="color: #646464;">Android Developer, Marketing</p>
-          </div>
-        </a>
-        
-        #co opted as Community Guidelines Page
-        
-
-        
-    
-        
-        
+    <div class="footerLink">
+       <a><%= link_to "Community Guidelines", "/what-is-wishroll" %></a> 
     </div>
+</div>
+  
+  <div class="footerCol">
+      <h3 style="color: black; font-weight: 600;" >Find us on</h3>
+      <div class="footerLink">
+          <a href="https://www.instagram.com/wishroll/" target="_blank">Instagram</a>
+      </div>
+      <div class="footerLink">
+          <a href="https://www.twitter.com/wishroll/" target="_blank">Twitter</a>
+      </div>
+      <div class="footerLink">
+          <a href="https://www.tiktok.com/@wishroll?lang=en" target="_blank">TikTok</a>
+      </div>
+  </div>
 
-    <footer id="flexFooter" class="contentContainer " >
-        <div class="footerCol">
-            <a>
-                <h3 style="color: black; font-family: Roboto;">WishRoll</h3>
-            </a>
-            <small>© 2021 WishRoll</small>
-        </div>
+  <div class="footerCol">
+    <h3 style="color: black; font-weight: 600;" >Contact Us</h3>
+    <div class="footerLink">
+        <a href="" target="_blank">info@wishroll.co</a>
+  
+    </div>
+</div>
+</footer>
 
-        <div class="footerCol">
-            <h3 style="color: black;" >Policy</h3>
-            <div class="footerLink">
-                <a><%= link_to "Home", "/home" %></a>
-            </div>
-            <div class="footerLink">
-                <a><%= link_to "Privacy Policy", "/privacy" %></a>
-               
-            </div>
-            <div class="footerLink">
-                <a><%= link_to "Terms of Use", "/terms" %></a>
-            </div>
-        </div>
-        
-        
-        <div class="footerCol">
-            <h3 style="color: black;" >Find us on</h3>
-            <div class="footerLink">
-                <a href="https://www.instagram.com/wishroll/" target="_blank">Instagram</a>
-            </div>
-            <div class="footerLink">
-                <a href="https://www.twitter.com/wishroll/" target="_blank">Twitter</a>
-            </div>
-            <div class="footerLink">
-                <a href="https://www.tiktok.com/@wishroll?lang=en" target="_blank">TikTok</a>
-            </div>
-        </div>
-
-        <div class="footerCol">
-            <h3 style="color: black;" >Contact Us</h3>
-            <div class="footerLink">
-                <a href="" target="_blank">info@wishroll.co</a>
-           
-            </div>
-        </div>
-      </footer>
-    
-
-
-    
-</body>
 </html>
